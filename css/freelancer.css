@@ -50,7 +50,7 @@ hr.star-light2:after {
 
 hr.star-light:after {
   color: #fff;
-  background-color: #4d4d4d;
+  background-color: #1B1B1B;
 }
 
 hr.star-dark {
@@ -151,7 +151,7 @@ section h2 {
     transition: padding-top 0.3s, padding-bottom 0.3s;
   }
   #mainNav .navbar-brand {
-    font-size: 2em;
+    font-size: 1.5em;
     -webkit-transition: font-size 0.3s;
     -moz-transition: font-size 0.3s;
     transition: font-size 0.3s;
@@ -207,7 +207,7 @@ header.masthead h2 {
     padding-bottom: 6rem;
   }
   header.masthead h1 {
-    font-size: 4.75em;
+    font-size:  2em;
     line-height: 4rem;
   }
   header.masthead h2 {
@@ -231,7 +231,7 @@ header.masthead h2 {
   -moz-transition: all ease 0.5s;
   transition: all ease 0.5s;
   opacity: 0;
-  background-color: rgba(24, 188, 156, 0.9);
+  background-color: rgba(255,165,0, 0.9);
 }
 
 .portfolio .portfolio-item .portfolio-item-caption:hover {
@@ -280,7 +280,7 @@ header.masthead h2 {
   .portfolio-modal .portfolio-modal-dialog {
     min-height: 100vh;
     padding: 5rem;
-    margin: 2rem calc(15rem - 15px);
+    margin: 3rem calc(3rem - 8px);
   }
   .portfolio-modal .portfolio-modal-dialog h2 {
     font-size: 3rem;
@@ -365,7 +365,7 @@ a:focus, a:hover, a:active {
 }
 
 .bg-primary {
-  background-color: #4d4d4d !important;
+  background-color: #1B1B1B !important;
 }
 
 .bg-secondary {
@@ -407,14 +407,14 @@ a:focus, a:hover, a:active {
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: 0em; /* Adjust as needed */
   animation: 
-    typing 3.5s steps(40, end),
-    blink-caret .75s step-end infinite;
+    typing 4s steps(44) 1s 1 normal both,
+    blink-caret 500ms steps(44) infinite normal;
 }
 
 /* The typing effect */
 @keyframes typing {
   from { width: 0 }
-  to { width: 100% }
+  to { width: 45% }
 }
 
 /* The typewriter cursor effect */
@@ -424,6 +424,72 @@ a:focus, a:hover, a:active {
 }
 
 .png {
-  max-width: 100%;
+
+  max-width: 150%;
   min-height: 100%;
+}
+
+.png2 {
+  
+  max-width: 160%;
+  min-height: 100%;
+}
+
+.lamadone {
+  max-width: 50%;
+  min-height: 50%;
+  float: left;
+}
+
+.profile {
+  max-width: 50%;
+  float: right;
+}
+
+.angular {
+  max-width: 50%;
+  min-height: 50%;
+  margin-left: 35%;
+}
+
+.imgcontent {
+  margin-top: 25%;
+  float:left;
+  width: 50%;
+}
+
+.veille {
+  float: left;
+  margin-left: 12%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+}
+
+.imgcontent:hover .overlay {
+  background-color: #1B1B1B;
+  opacity: 1;
+}
+
+.roundedImage{
+  overflow:hidden;
+  -webkit-border-radius:50px;
+  -moz-border-radius:50px;
+  border-radius:50%;
+  width:30%;
+  height:20%;
+}
+
+.veille:hover .overlay {
+  background-color: #fff;
+  opacity: 1;
 }

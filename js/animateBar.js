@@ -17,11 +17,11 @@ $(window).scroll(function() {
     if((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element)){
         setTimeout(function() {
             $progressBarJava.css('width', '45%'); 
-            $progressBarPHP.css('width', '55%');
-            $progressBarC.css('width', '70%');
+            $progressBarPHP.css('width', '50%');
+            $progressBarC.css('width', '60%');
             $progressBarHTML.css('width', '60%');
-            $progressBarSQL.css('width', '55%');
-            $progressBarCSS.css('width', '55%');
+            $progressBarSQL.css('width', '40%');
+            $progressBarCSS.css('width', '60%');
         }, 1000); // WAIT 1 second
     }
     else {
